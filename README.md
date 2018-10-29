@@ -1,10 +1,23 @@
 # promptpay
 
+
+## Installation
+
+This is a [Node.js](https://nodejs.org/en/) module available through the
+[npm registry](https://www.npmjs.com/).
+
+Before installing, [download and install Node.js](https://nodejs.org/en/download/).
+
+Installation is done using the
+[`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
+
+```bash
+$ npm install -S qrcode-gbpay
 ```
-Install : npm i -S qrcode-gbpay
 
-// Ex 1
+## Examples
 
+```
 const qrGBPay = require('qrcode-gbpay');
 
 var app = express();
