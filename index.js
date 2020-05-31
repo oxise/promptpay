@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./src/qr');
+module.exports = require('./lib/qr');
