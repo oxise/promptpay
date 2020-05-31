@@ -18,7 +18,7 @@ $ npm install -S qrcode-gbpay
 ## Examples
 
 ```
-const qrGBPay = require('qrcode-gbpay');
+const { PromptPay } = require('qrcode-gbpay');
 
 var app = express();
 
@@ -37,7 +37,7 @@ app.post('/genqrcode', (req, res)=>{
 
     var refNo = Math.floor(Date.now() / 1000);
 
-    qrGBPay({
+    PromptPay({
         amount: 10.00,
         detail: 'deposit credit by QRcode Oxise.IO',
         referenceNo: refNo,
@@ -47,7 +47,6 @@ app.post('/genqrcode', (req, res)=>{
 
           // Response { data: 'QRCode png base64 ' }
 
-        resp["refNo"] = refNo;
         res.json(resp);       
 
     }).catch(err =>{

@@ -1,9 +1,11 @@
 {
   "name": "qrcode-gbpay",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "GB PAY QR Code Promptpay + Webhook",
-  "main": "index.js",
+  "main": "lib/qr.js",
+  "types": "lib/qr.d.ts",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,7 +18,12 @@
     "url": "https://github.com/oxise/promptpay/issues"
   },
   "homepage": "https://github.com/oxise/promptpay#readme",
+  "devDependencies": {
+    "@types/node": "^14.0.6",
+    "axios": "^0.19.2",
+    "query-string": "^6.12.1"
+  },
   "dependencies": {
-    "request": "^2.88.0"
+    "typescript": "^3.9.3"
   }
 }
